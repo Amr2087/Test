@@ -6,7 +6,7 @@ import os
 
 st.title("GROQ LLaMA Chatbot")
 
-os.environ["GROQ_API_KEY"] = "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"
+os.environ["GROQ_API_KEY"] = st.secrets["my_cool_secrets"]["GROQ_API_KEY"]
 
 
 model = ChatGroq(model="llama3-8b-8192",)
